@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name – Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Research papers by Your Name." />
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --fg: #111827;
+      --muted: #6b7280;
+      --accent: #1f2933;
+      --border: #e5e7eb;
+      --link: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header.site-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .site-title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .site-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    nav.site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    nav.site-nav a {
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav.site-nav a.active {
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+    }
+
+    main {
+      margin-top: 24px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+
+    .page-intro {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin-bottom: 24px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .papers {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .paper-card {
+      background: #ffffff;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 16px 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .paper-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .paper-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+
+    .paper-authors {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .paper-summary {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .paper-links {
+      font-size: 0.9rem;
+    }
+
+    .paper-links a {
+      margin-right: 10px;
+      white-space: nowrap;
+    }
+
+    .paper-figure-wrapper {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .paper-figure {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      display: block;
+      margin: 0 auto 6px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media (max-width: 720px) {
+      .paper-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div>
+        <!-- CHANGE THIS TO YOUR NAME & POSITION -->
+        <div class="site-title">Your Name</div>
+        <div class="site-subtitle">
+          Your Title · Your Institution
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="personal.html">Personal</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Research</h1>
+      <p class="page-intro">
+        Below is a selection of my current research. Drafts and slides are
+        available for download; please do not circulate without permission.
+      </p>
+
+      <div class="section-label">Working papers</div>
+
+      <section class="papers">
+        <!-- PAPER 1 -->
+        <article class="paper-card">
+          <div>
+            <h2 class="paper-title">Paper 1 Title Goes Here</h2>
+            <div class="paper-authors">
+              Your Name, Coauthor Name, Coauthor Name
+            </div>
+            <p class="paper-summary">
+              Short 3–5 sentence summary of the paper. State the question,
+              the main contribution, and one key result in accessible terms.
+              You can also briefly mention the empirical setting or model.
+            </p>
+            <div class="paper-links">
+              <!-- Update file paths to your actual PDFs -->
+              <a href="pdfs/paper1_draft.pdf" target="_blank" rel="noopener noreferrer">
+                Draft (PDF)
+              </a>
+              <a href="pdfs/paper1_slides.pdf" target="_blank" rel="noopener noreferrer">
+                Slides (PDF)
+              </a>
+            </div>
+          </div>
+          <div class="paper-figure-wrapper">
+            <!-- Update image path and alt text -->
+            <img
+              src="img/paper1_result.png"
+              alt="Main result from Paper 1"
+              class="paper-figure"
+            />
+            <div>
+              Main result: short caption (e.g. “Network shock raises output
+              by X% for mid-central firms.”)
+            </div>
+          </div>
+        </article>
+
+        <!-- PAPER 2 -->
+        <article class="paper-card">
+          <div>
+            <h2 class="paper-title">Paper 2 Title Goes Here</h2>
+            <div class="paper-authors">
+              Your Name, Coauthor Name
+            </div>
+            <p class="paper-summary">
+              Short 3–5 sentence summary describing the research question,
+              method (theory / empirics / experiment), and main findings.
+              Emphasize what is new relative to existing work.
+            </p>
+            <div class="paper-links">
+              <a href="pdfs/paper2_draft.pdf" target="_blank" rel="noopener noreferrer">
+                Draft (PDF)
+              </a>
+              <a href="pdfs/paper2_slides.pdf" target="_blank" rel="noopener noreferrer">
+                Slides (PDF)
+              </a>
+            </div>
+          </div>
+          <div class="paper-figure-wrapper">
+            <img
+              src="img/paper2_result.png"
+              alt="Main result from Paper 2"
+              class="paper-figure"
+            />
+            <div>
+              Main result: short caption (e.g. “Downstream demand shocks
+              generate persistent TFP gains.”)
+            </div>
+          </div>
+        </article>
+
+        <!-- PAPER 3 -->
+        <article class="paper-card">
+          <div>
+            <h2 class="paper-title">Paper 3 Title Goes Here</h2>
+            <div class="paper-authors">
+              Your Name
+            </div>
+            <p class="paper-summary">
+              Short 3–5 sentence summary. You can also include status
+              information (e.g. “work in progress”, “R&R at Journal X”),
+              and briefly mention ongoing extensions if relevant.
+            </p>
+            <div class="paper-links">
+              <a href="pdfs/paper3_draft.pdf" target="_blank" rel="noopener noreferrer">
+                Draft (PDF)
+              </a>
+              <a href="pdfs/paper3_slides.pdf" target="_blank" rel="noopener noreferrer">
+                Slides (PDF)
+              </a>
+            </div>
+          </div>
+          <div class="paper-figure-wrapper">
+            <img
+              src="img/paper3_result.png"
+              alt="Main result from Paper 3"
+              class="paper-figure"
+            />
+            <div>
+              Main result: short caption (e.g. “Climate news shocks explain
+              X% of forecast revisions.”)
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy; <span id="year"></span> Your Name</div>
+      <div>
+        <a href="index.html">Home</a>
+        ·
+        <a href="mailto:you@example.com">Email</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Set current year automatically in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
